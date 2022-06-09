@@ -14,37 +14,32 @@ function NavTabs({ currentPage, handlePageChange }) {
 
 
   return (
+    <Navbar bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href="#landingPage"
+          onClick={() => handlePageChange('landingPage')} className={currentPage === 'landingPage' ? 'nav-link active' : 'nav-link'}>Space X</Navbar.Brand>
 
-    <Navbar className='mobilePos'>
-      <div className='mobileMenu' />
+        <Nav className="me-auto">
+          <Nav.Link href="#collections"
+            onClick={() => handlePageChange('Collections')} className={currentPage === 'Collections' ? 'nav-link active' : 'nav-link'}>Collections</Nav.Link>
 
+          <Nav.Link href="#ships"
+            onClick={() => handlePageChange('Ships')} className={currentPage === 'Ships' ? 'nav-link active' : 'nav-link'}>Ships</Nav.Link>
 
+          <Nav.Link href="#Travel"
+            onClick={() => handlePageChange('Travel')} className={currentPage === 'Travel' ? 'nav-link active' : 'nav-link'}>Travel</Nav.Link>
 
+          <Nav.Link href="#About"
+            onClick={() => handlePageChange('About')} className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>About</Nav.Link>
 
-              <Container className='navMain'>
+          <Nav.Link href="#Contact"
+            onClick={() => handlePageChange('Contact')} className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Contact</Nav.Link>
 
+        </Nav>
+      </Container>
+    </Navbar>
 
-
-                <Nav className="navHome">
-                  <div className='nav'>
-                    <Nav.Link
-                      href="#landingPage"
-                      onClick={() => handlePageChange('landingPage')}
-
-                      className={currentPage === 'landingPage' ? 'nav-link active' : 'nav-link'}
-                    >
-                       HOME
-                    </Nav.Link>
-                  </div >
-
-
-
-                </Nav>
-
-              </Container>
-            
-            </Navbar>
-            );
+  );
 }
 
-            export default NavTabs;
+export default NavTabs;
