@@ -21,7 +21,7 @@ function NavTabs({ currentPage, handlePageChange }) {
 
         <Nav className="me-auto">
           <Nav.Link href="#collections"
-            onClick={() => handlePageChange('Collections')} className={currentPage === 'Collections' ? 'nav-link active' : 'nav-link'}>Collections</Nav.Link>
+            onClick={() => handlePageChange('Collections')} className={currentPage === 'Collections' ? 'nav-link active' : 'nav-link'}>Home</Nav.Link>
 
           <Nav.Link href="#ships"
             onClick={() => handlePageChange('Ships')} className={currentPage === 'Ships' ? 'nav-link active' : 'nav-link'}>Ships</Nav.Link>
