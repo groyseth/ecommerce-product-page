@@ -1,0 +1,6 @@
+DROP DATABASE IF EXISTS spaceX_db;
+
+
+
+CREATE DATABASE spaceX_db;
+USE spaceX_db;
